@@ -1,0 +1,139 @@
+html, body {
+    width: 100%;
+}
+html {
+    font-size: 100%;
+}
+body {
+    background: $bg-color;
+    color: set-text-color($bg-color);
+    font-family: $font-family-base, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+a {
+    -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+    display: inline;
+    &:link, &:visited, &:hover, &:active {
+      color: $light-box-color;
+    }
+}
+img {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+.btn-close {
+    font-size: 3em;
+    padding: 15px 0; 
+}
+h1, h2, h3, h4 {
+    font-family: $font-family-header, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+h2 {
+    font-size: 2.4em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.4em;
+}
+.grey {
+    background: $light-box-color;
+}
+.text-block {
+    max-width: 720px;
+    margin: auto;
+    padding: 64px 20px;
+    border-radius: 5px;
+    p {
+        padding: 0 1rem 2rem 0;
+        &:last-of-type {
+            padding: 0 1rem 0 0;
+        }
+    }
+    strong {
+        text-transform: uppercase;
+    }
+    h2 {
+        text-align: left;
+    }
+}
+hr {
+    margin: 64px 0 0 0;
+}
+footer {
+    padding: 8px;
+    text-align: center;
+}
+// END: GLOBAL STYLES
+
+// CLASS
+.core-block {
+    width: 100%;
+}
+.cargo {
+    text-align: center;
+}
+.dark-theme {
+    background: $bg-color;
+    color: set-text-color($bg-color);
+}
+// ID
+#map {
+    height: 400px;
+    width: 100%;
+}
+#push {
+    height: 80px;
+}
+#mobile-nav {
+    // padding-top, height obsługiwane przez JS - WARTOŚĆ: 0
+    padding-top: 0; 
+    height: 0;
+    width: 100%;
+    position: fixed;
+    background: rgba(24,24,24,.9);
+    overflow: hidden;
+    transition: 0.75s;
+    a {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: $light-box-color;
+        text-align: center;
+        text-transform: uppercase; }
+    
+}
+#to-the-top {
+    display: inline;
+    padding: 0 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    // background: rgba(0, 0, 0,.5);
+    opacity: 0;
+    transition: 1s;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 6px #CCC;
+    position: fixed;
+    bottom: 48px; right: 0;
+    z-index: 1001;
+}
+#to-the-top::before {
+    font-size: 32px;
+}
+@media (min-width: 768px) {
+    #to-the-top {
+        bottom: 20vh;
+    }
+}

@@ -1,0 +1,13 @@
+.about-bg {
+    background: $light-box-color;
+    color: set-text-color(darken($light-box-color, 5%));
+    // background: $bg-color;
+    // color: set-text-color($bg-color);
+    // background: linear-gradient(to bottom right, $light-box-color, $bg-color);
+}
+#about-section {
+    h2 {
+        text-align: left;
+        padding-bottom: 0;
+    }
+}

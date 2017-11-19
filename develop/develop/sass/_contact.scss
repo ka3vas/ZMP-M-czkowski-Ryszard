@@ -1,0 +1,45 @@
+.contact-bg {
+    background: $light-box-color;
+    color: set-text-color($light-box-color);
+    p {
+        font-size:1.2em;
+        text-align:center;
+    }
+    span {
+        font-size: 1.3em;
+        display:block;
+        text-align:center;
+    }
+    address {
+        font-size: 1.3em;
+        display:block;
+        text-align:center;
+        font-style: normal;
+        font-weight: bold;
+    }
+}
+#contact-section {
+    section {
+        width: 320px; }
+    section {
+        margin: 0 auto; }
+    .flex-box {
+        max-width: 1280px; }
+}
+.tele-button {
+    display:block;
+    max-width: 240px;
+    font-size: 1.7em;
+    margin: 1rem auto 0;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.25);
+    background: lighten(green, 15%);
+    padding: 10px 30px;
+    text-align:center;
+    &:link, &:visited, &:hover, &:active {
+        color: $light-box-color;
+        text-shadow: 2px 2px 4px #000000;
+      }
+}
+.flaticon-placeholder-filled-point {
+    color: darken(red, 10%);
+}

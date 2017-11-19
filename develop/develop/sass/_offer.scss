@@ -1,0 +1,22 @@
+.card {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1280px;
+    text-align: center;
+    ul {
+        h4 {
+            font-weight: 900; }
+        p {
+            font-weight: 900; }  
+    }
+}
+#offer-section {
+    padding: 64px 0 32px;
+    background: black;
+    color: $light-box-color;
+    position: relative;
+    z-index: 1;
+    h4 {
+        text-transform: uppercase;
+    }
+}

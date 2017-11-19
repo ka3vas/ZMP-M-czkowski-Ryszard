@@ -1,0 +1,16 @@
+{
+  "name": "zmp",
+  "version": "1.0.0",
+  "description": "strona internetowa dla firmy ZMP Maczkowski",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Sebastian Krata",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

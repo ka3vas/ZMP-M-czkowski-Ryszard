@@ -1,0 +1,128 @@
+@import 'variables';
+@import 'function';
+@import 'reset';
+@import 'global';
+@import 'page-header';
+@import 'about';
+@import 'offer';
+@import 'contact';
+@import 'aside';
+
+@font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.eot");
+    src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+        url("./Flaticon.woff") format("woff"),
+        url("./Flaticon.ttf") format("truetype"),
+        url("./Flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+    
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-family: Flaticon;
+        font-size: 3rem;
+font-style: normal;
+}
+    
+.flaticon-oil:before { content: "\f100"; }
+.flaticon-circle:before { content: "\f101"; }
+.flaticon-snowflake:before { content: "\f102"; }
+.flaticon-signal-waves:before { content: "\f103"; }
+.flaticon-arrows:before { content: "\f104"; }
+.flaticon-bars:before { content: "\f105"; }
+.flaticon-phone-receiver:before { content: "\f106"; }
+.flaticon-placeholder-filled-point:before { content: "\f107"; }
+.flaticon-time:before { content: "\f108"; }
+.flaticon-repair-wrenches:before { content: "\f109"; }
+
+// MEDIAQUERY
+@media (max-width: 959px) {
+    .flex-box {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        li {
+            width: 300px;
+            padding-bottom: 4rem;
+        margin: auto; }
+    }
+}
+@media (min-width: 960px) {
+    .flex-box {
+        max-width: 960px;
+        margin: auto;
+        padding: 0 0 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        li {
+            width: 320px; }
+    }
+}
+@media (min-width: 640px) and (max-width: 959px) {
+    .medium-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
+// PAGE HEADER
+@media ( min-width: 600px) {
+    #page-header {
+        display: inline;
+        padding: 0;
+        margin: 0;
+        h1 {
+            text-align: left; }
+    }
+    .header-top {
+        height: 100vh;
+        background: url(../../public/img/cars-main-cover.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+    #flexPageHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 0;
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            background: rgba(0, 0, 0, .65);
+        }
+    }
+}
+// OFFER
+@media (min-width: 600px) {
+    #offer-section::after {
+        content: "";
+        background: url(../../public/img/cars-second-cover.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity: 0.6;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+// CONTACT
+@media (max-width: 960px) {
+    .pd-btm {
+    padding-bottom: 3rem; }
+}
+@media (min-width: 960px) and (max-width: 1080px) {
+#contact-section {
+    font-size: 75%; }
+}
